@@ -10,7 +10,8 @@ images = [
 
     "small.png",
     "average.png",
-    "big.png"
+    "big.png",
+    "fat.png"
 
 ]
 
