@@ -5,9 +5,9 @@ services:
     networks:
       counter-net:
   rocketcounter:
-    image: rotorocloud/rocket-counter
+    build: .
     ports:
-    - 8085:5000
+    - 8085-8086:5000
     networks:
       counter-net:
     volumes:
