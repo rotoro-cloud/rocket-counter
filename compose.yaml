@@ -10,6 +10,8 @@ services:
     - 8085:5000
     networks:
       counter-net:
+    volumes:
+    - counter-vol:/code
 
 networks:
   counter-net:
