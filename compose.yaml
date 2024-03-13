@@ -1,0 +1,17 @@
+version: '3.0'
+services:
+  redis:
+    image: redis
+    networks:
+      counter-net:
+  rocketcounter:
+    image: rotorocloud/rocket-counter
+    ports:
+    - 8085:5000
+    networks:
+      counter-net:
+
+networks:
+  counter-net:
+volumes:
+  counter-vol:
